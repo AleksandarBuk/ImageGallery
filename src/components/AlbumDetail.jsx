@@ -1,7 +1,7 @@
 // AlbumDetail.jsx
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { album1, album2, album3 } from './constants';
+import { album1, album2, album3, album4 } from './constants';
 import styles, { layout } from '../style';
 
 const AlbumDetail = () => {
@@ -14,6 +14,8 @@ const AlbumDetail = () => {
     selectedAlbum = album2;
   } else if (id === 'album3') {
     selectedAlbum = album3;
+  } else if (id === 'album4') {
+    selectedAlbum = album4;
   }
 
   const [selectedImage, setSelectedImage] = useState(selectedAlbum ? selectedAlbum[0] : null);

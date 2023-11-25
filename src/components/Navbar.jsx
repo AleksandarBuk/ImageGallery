@@ -12,6 +12,7 @@ const Navbar = () => {
       <Link to="/">
         <img src={logoWoBg} alt="Logo" className="w-[50px] h-[50px]" />
       </Link>
+      <h2 className="font-poppins">Andjela Photo</h2>
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
