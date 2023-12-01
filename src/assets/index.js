@@ -25,10 +25,11 @@ import h2 from "./h2.JPG";
 import h3 from "./h3.JPG";
 import h4 from "./h4.JPG";
 import h5 from "./h5.JPG";
-
+import about_me_selfie from "./andjla_selfie.jpg";
 
 
 export {
+  about_me_selfie,
   h1,
   h2,
   h3,
