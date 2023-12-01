@@ -23,7 +23,12 @@ const styles = {
 
     arrowButton: "text-2xl text-white p-2 cursor-pointer select-none",
 
+    selfieContainer: "flex justify-center items-center w-full",
+    selfieStyle: "w-full max-w-[800px] h-auto border-4 border-solid border-white rounded-full",
+    
+
   };
+  
   
   export const layout = {
     section: `flex md:flex-row flex-col ${styles.paddingY}`,
