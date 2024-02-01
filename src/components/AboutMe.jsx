@@ -1,29 +1,25 @@
-import React from 'react';
+// Corrected About Me Component
 import styles from '../style';
-import { about_me_selfie } from '../assets';
+import { andjela_selfie } from '../Assets';
 
-export const AboutMe = () => (
-  <div className={`${styles.flexCenter} ${styles.padding}`}>
-    <div className={`${styles.boxWidth}`}>
-      <h2 className={styles.heading2}>About Me</h2>
-      <p className={`${styles.paragraph} ${styles.padding_p_am}`}>
-        Hello! I&apos;m Andjela, a passionate photographer with a deep love for capturing the beauty in people and moments. My journey with photography began as a hobby but quickly evolved into a profound means of storytelling and expression. I specialize in portrait, landscape, street photography, bringing a unique perspective to each shot.
+const AboutMe = () => (
+  <div className={`${styles.flexCenter} ${styles.padding} flex-col md:flex-row`}>
+    <div className={`${styles.sectionImg} max-w-md mx-auto md:mx-0`}>
+      <img src={andjela_selfie} alt="Andjela" className="rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300" />
+    </div>
+    <div className={`${styles.boxWidth} text-center md:text-left md:ml-12`}>
+      <h2 className={`${styles.heading2} text-gradient bg-gradient-to-r from-gray-500 to-gray-600`}>About Me</h2>
+      <p className={`${styles.paragraph} my-4`}>
+        Hello! I&apos;m Andjela, a passionate photographer with a deep love for capturing beauty in people and moments. My journey began as a hobby and evolved into a means of storytelling.
       </p>
-
-      <p className={`${styles.paragraph} ${styles.padding_p_am}`}>
-        My philosophy revolves around the power of a photograph to not just preserve a moment, but to also evoke emotion and tell a story beyond words. With a keen eye for detail and a relentless pursuit of the perfect shot, I strive to create images that resonate with emotion and authenticity.
+      <p className={`${styles.paragraph} my-4`}>
+        I specialize in portrait, landscape, and street photography, bringing a unique perspective to each shot. I strive to create images that resonate with emotion and authenticity.
       </p>
-
-      <div className={styles.selfieContainer}>
-        <img src={about_me_selfie} alt="Selfie of Andjela" className={styles.selfieStyle} />
-      </div>
-
-      <p className={`${styles.paragraph} ${styles.padding_p_am}`}>
-        Beyond the lens, I am deeply committed to continuous learning and exploring new techniques in photography. I believe in the magic that happens when you step out of your comfort zone, which is why I&apos;m always experimenting with new styles and approaches.
+      <p className={`${styles.paragraph} my-4`}>
+        Beyond the lens, I am committed to exploring new techniques and continuously learning. I believe in the magic of stepping out of your comfort zone and experimenting with new styles.
       </p>
-
-      <p className={`${styles.paragraph} ${styles.padding_p_am}`}>
-        Whether it&apos;s a fleeting smile, a serene landscape, or the chaotic beauty of urban life, my goal is to bring those scenes to life through my camera. Every photo I take is a piece of my journey, and I&apos;m excited to share it with you.
+      <p className={`${styles.paragraph} my-4`}>
+        Whether capturing a fleeting smile or the chaotic beauty of urban life, my goal is to bring those scenes to life. Every photo is a piece of my journey, and I&apos;m excited to share it with you.
       </p>
     </div>
   </div>
