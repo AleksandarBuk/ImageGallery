@@ -1,7 +1,7 @@
 // AlbumDetail.jsx
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { album1, album2, album3, album4 } from './constants';
+import { album1, album2, album3, album4 } from '../Assets/constants';
 import styles, { layout } from '../style';
 
 const AlbumDetail = () => {
@@ -29,7 +29,7 @@ const AlbumDetail = () => {
       {/* Main Image Display */}
       <div className={layout.albumMainImage}>
         {selectedImage && (
-          <img src={selectedImage.imageUrl} alt={selectedImage.title} className="max-w-full max-h-full object-contain" />
+          <img src={selectedImage.imageUrl} alt={selectedImage.title} className={`max-w-full max-h-full object-contain ${styles.albumImageOutline}`} />
         )}
       </div>
 
@@ -40,7 +40,7 @@ const AlbumDetail = () => {
             key={image.id}
             src={image.imageUrl}
             alt={image.title}
-            className={styles.thumbnailImage}
+            className={`${styles.thumbnailImage} ${styles.albumImageOutline}`}
             onClick={() => setSelectedImage(image)}
           />
         ))}
