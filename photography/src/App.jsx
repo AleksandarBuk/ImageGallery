@@ -35,7 +35,6 @@ export const App = () => {
             </div>
           } />
           <Route path="/album/:albumUrl" element={<AlbumDetail />} />
-          {/* Uncomment or add other routes as needed */}
         </Routes>
       </div>
     </Router>

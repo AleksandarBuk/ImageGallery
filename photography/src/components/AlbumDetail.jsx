@@ -9,7 +9,6 @@ const AlbumDetail = () => {
   const album = albums.find(album => album.albumUrl === albumUrl);
   const [selectedImage, setSelectedImage] = useState(album?.images[0]?.imageUrl);
 
-  // Set album name as page title
   useEffect(() => {
     if (album) {
       document.title = album.title;
@@ -21,21 +20,18 @@ const AlbumDetail = () => {
   }
 
   return (
-    <div className={`${styles.albumDetailBackground}`}>
-      {/* Centered album title */}
-      <div className={`${styles.navBackground} text-3xl font-semibold mb-4 text-center`}> {album.title}</div>
-      {/* Main panel for full-size image with colored background */}
+    <div className={`${styles.albumDetailBackground} fadeIn`}>
+      <div className={`${styles.navBackground} fadeIn-05 text-3xl font-semibold mb-4 text-center`}>{album.title}</div>
       <div className={styles.navBackground}>
         <img src={selectedImage} alt="Selected" className="max-h-[80vh]" style={{ objectFit: 'contain' }} />
       </div>
-      {/* Bottom panel for thumbnails, centered */}
-      <div className="bottom-panel flex justify-center items-center mt-4 overflow-x-scroll" style={{ gap: '10px' }}>
+      <div className="bottom-panel flex justify-center items-center mt-4 overflow-x-scroll" style={{ gap: '2px' }}>
         {album.images.map((image, index) => (
           <img
             key={index}
             src={image.imageUrl}
             alt={image.title}
-            className={`album-thumbnail w-24 h-24 object-cover cursor-pointer ${selectedImage === image.imageUrl ? 'border-4 border-blue-500' : 'border border-transparent'}`}
+            className={`album-thumbnail w-30 h-16 object-cover cursor-pointer ${selectedImage === image.imageUrl ? 'border-4 border-blue-500' : 'border border-transparent'}`}
             onClick={() => setSelectedImage(image.imageUrl)}
             style={{ marginRight: index !== album.images.length - 1 ? '10px' : '0', transition: 'border 0.3s ease' }}
           />

@@ -11,34 +11,29 @@ const Navbar = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // Turn on the highlight
       setHighlightContact(true);
   
-      // Turn off the highlight after 5 seconds
       setTimeout(() => {
         setHighlightContact(false);
       }, 5000);
     }, 30000);
   
-    return () => clearInterval(interval); // Clean up on component unmount
+    return () => clearInterval(interval); 
   }, []); 
 
   const handleNavClick = (nav) => {
     if (nav.title === "Home") {
       window.location.href = '/';
     }
-    // Assuming 'nav' is an object that contains your navigation information
     if (nav.title === "About Me") {
       const section = document.getElementById('about-me');
       if (section) {
-        // If the section exists, scroll to it smoothly
         section.scrollIntoView({ behavior: 'smooth', block: 'start' });
       } else {
-        // If the section does not exist, redirect to the anchor in the URL
         window.location.href = '/#aboutme';
       }
     } else if (nav.title === "Contact") {
-      alert("Andjela@gmail.com");
+      alert("andjela.dro.photography@gmail.com");
     }
   };
 

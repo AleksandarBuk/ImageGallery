@@ -21,7 +21,7 @@ const Hero = () => {
                     <h1 className={`${styles.heading2} welcomeText slideInLeft mb-8`}>Welcome to Andjela Photography</h1>
                     <div id="album-grid" className="w-full" style={albumGridStyle}>
                         <AlbumGrid />
-                        <p style={{ textAlign: 'center', fontStyle: 'italic', marginTop: '20px', color: 'white', fontSize: '16px' }}>
+                        <p style={{ textAlign: 'center', fontStyle: 'italic', marginTop: '20px', color: 'white', fontSize: '20px' }}>
                             Check out my album collection <span className="jumpingArrow">↑</span>
                         </p>
                     </div>
