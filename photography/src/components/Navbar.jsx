@@ -68,23 +68,25 @@ const Navbar = () => {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         />
 
-        <div
-          className={`${!isMenuOpen ? "hidden" : "flex"} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
-        >
-          <ul className="list-none flex-col justify-end items-center flex-1">
-            {navLinks.map((nav) => (
-              <li
-                key={nav.title}
-                className={`font-poppins font-normal cursor-pointer text-[16px] ${
-                  location.pathname === nav.href || (highlightContact && nav.title === "Contact") ? "text-white" : "text-dimWhite"
-                } my-2`}
-                onClick={() => handleNavClick(nav)}
-              >
-                {nav.href ? <Link to={nav.href}>{nav.title}</Link> : nav.title}
-              </li>
-            ))}
-          </ul>
-        </div>
+      <div
+        className={`${!isMenuOpen ? "hidden" : "flex"} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+        style={{ zIndex: 1000 }} // Add a high z-index value
+      >
+        <ul className="list-none flex-col justify-end items-center flex-1">
+          {navLinks.map((nav) => (
+            <li
+              key={nav.title}
+              className={`font-poppins font-normal cursor-pointer text-[16px] ${
+                location.pathname === nav.href || (highlightContact && nav.title === "Contact") ? "text-white" : "text-dimWhite"
+              } my-2`}
+              onClick={() => handleNavClick(nav)}
+            >
+              {nav.href ? <Link to={nav.href}>{nav.title}</Link> : nav.title}
+            </li>
+          ))}
+        </ul>
+      </div>
+
       </div>
     </nav>
   );

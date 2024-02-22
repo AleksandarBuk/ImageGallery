@@ -4,7 +4,7 @@ import { albums } from './constants';
 
 const AlbumGrid = () => {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-4">
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 p-4">
       {albums.map((album) => (
         <Link key={album.id} to={`/album/${album.albumUrl}`} className="no-underline text-black group">
           <div className="relative border border-gray-200 shadow-sm hover:shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105">

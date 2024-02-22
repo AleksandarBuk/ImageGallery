@@ -11,10 +11,11 @@ import andjela_selfie from "./andjela_selife.JPG";
 import andjela_profile from "./andjela_profile.png";
 
 import { i1, i2, i3, i4, i5, } from "./lice-ulice";
-import { p1, p2, p3, p4, p5, p6, p7, p8 } from "./protraits";
+import { p1, p2, p3, p4, p5, p6, p7, p8, lena1, lena2, lena3, lena4 } from "./protraits";
 import n from "./n-1 (5).jpg";
 import { na1, na2, na3, na4, na5, na6, na7, na8 } from "./nature_a";
-import { ha1, ha2, ha3, ha4, ha5, ha6, ha7, ha8} from "./happy_a";
+import { ha1, ha2, ha3, ha4, ha5, ha6, ha7, ha8 } from "./happy_a";
+import { jj1, jj11, jj3, jj4, jj5, jj6, jj7, jj9 } from "./jin-jang_a";
 
 export {
     second,
@@ -43,4 +44,6 @@ export {
     n,
     na1, na2, na3, na4, na5, na6, na7, na8,
     ha1, ha2, ha3, ha4, ha5, ha6, ha7, ha8,
+    jj1, jj11, jj3, jj4, jj5, jj6, jj7, jj9,
+    lena1, lena2, lena3, lena4
 }
