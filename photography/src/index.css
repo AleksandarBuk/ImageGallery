@@ -293,8 +293,8 @@
 }
 
 .album-thumbnail {
-  height: 150px;
-  width: 150px;
+  height: 115px;
+  width: 115px;
   object-fit: cover; /* Ensures the image covers the area without distorting its aspect ratio */
 }
 
