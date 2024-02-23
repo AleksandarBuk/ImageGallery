@@ -13,7 +13,6 @@ const AlbumDetail = () => {
     if (album) {
       document.title = album.title;
     }
-    // This might need adjustment or removal based on actual behavior
     if (thumbnailsRef.current) {
       thumbnailsRef.current.scrollLeft = 0;
     }
@@ -27,10 +26,8 @@ const AlbumDetail = () => {
     <div className={`${styles.albumDetailBackground} fadeIn`}>
       <div className={`fadeIn-05 text-3xl font-semibold mb-4 text-center`}>{album.title}</div>
       <div className={`${styles.navBackground} px-4 md:px-8 lg:px-12`}>
-        {/* Adjust main image size for mobile */}
         <img src={selectedImage} alt="Selected" className="h-[300px] md:h-[500px] w-full object-contain mx-auto" />
       </div>
-      {/* Ensure thumbnails are visible and properly aligned on mobile */}
       <div ref={thumbnailsRef} className="bottom-panel flex justify-start items-center mt-4 overflow-x-scroll space-x-2 px-2 sm:px-4 md:px-8 lg:px-12">
         {album.images.map((image, index) => (
           <img
