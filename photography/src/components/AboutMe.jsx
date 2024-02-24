@@ -8,7 +8,7 @@ const AboutMe = () => (
       <img src={andjela_profile} alt="Andjela" className="rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300" />
     </div>
     <div className={`${styles.boxWidth} text-center md:text-left md:ml-12`}>
-      <h2 className={`${styles.heading2} `}>About Me</h2>
+      <h2 className={`${styles.heading2} `}>O meni</h2>
       <p className={`${styles.paragraph} my-4`}>
         <p>Zdravo! Ja sam Anđela, fotograf koji duboko voli da beleži lepotu u ljudima i trenucima. Moje putovanje je počelo kao hobi i razvilo se u sredstvo pripovedanja.
       </p>

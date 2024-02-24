@@ -18,11 +18,11 @@ const Hero = () => {
         <div className={`${styles.flexCenter} ${styles.backgroundBorder} min-h-screen bg-cover bg-center zoomInBackground`} style={{ backgroundImage: `url(${A3})` }}>
             <div className={`${styles.flexCenter} bg-opacity-50 w-full h-full`}>
                 <div className={`${styles.boxWidth} flex flex-col items-center`}>
-                    <h1 className={`${styles.heading2} welcomeText slideInLeft mb-8`}>Welcome to Andjela Photography</h1>
+                    <h1 className={`${styles.heading2} welcomeText slideInLeft mb-8`}>Dobrodosli u Andjela Photography</h1>
                     <div id="album-grid" className="w-full" style={albumGridStyle}>
                         <AlbumGrid />
                         <p style={{ textAlign: 'center', fontStyle: 'italic', marginTop: '20px', color: 'white', fontSize: '20px' }}>
-                            Check out my album collection <span className="jumpingArrow">↑</span>
+                            Pregledajte moje albume <span className="jumpingArrow">↑</span>
                         </p>
                     </div>
                 </div>
