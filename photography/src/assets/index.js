@@ -10,14 +10,14 @@ import andjela_selfie from "./andjela_selife.JPG";
 
 import andjela_profile from "./andjela_profile.png";
 
-import { i1, i2, i3, i4, i5, } from "./lice-ulice";
+import { c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16, c17, c18, c19 } from "./lice-ulice";
 import { p1, p2, p3, p4, p5, p6, p7, p8, lena1, lena2, lena3, lena4 } from "./protraits";
 import n from "./n-1 (5).jpg";
-import { na1, na2, na3, na4, na5, na6, na7, na8 } from "./nature_a";
-import { ha1, ha2, ha3, ha4, ha5, ha6, ha7, ha8 } from "./happy_a";
-import { jj1, jj11, jj3, jj4, jj5, jj6, jj7, jj9 } from "./jin-jang_a";
-
+import { jinjang1, jinjang2, jinjang3, jinjang4, jinjang5, jinjang6, jinjang7, jinjang8, jinjang9, jinjang10, jinjang11, jinjang12, jinjang13 } from "../assets/jin-jang";
+import { nature1, nature2, nature3, nature4, nature5, nature6, nature7, nature8, nature9, nature10, nature11, nature12, nature13, nature14, nature15, nature16, nature17, nature18 } from "../assets/u-dodiru-sa-prirodom";
+import { hap1, hap2, hap3, hap4, hap5, hap6, hap7, hap8, hap9, hap10, hap11 } from "../assets/dokumentovana_radost";
 export {
+    c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16, c17, c18, c19,
     second,
     third,
     fourth,
@@ -28,11 +28,6 @@ export {
     A3,
     andjela_selfie,
     andjela_profile,
-    i1,
-    i2,
-    i3,
-    i4,
-    i5,
     p1,
     p2,
     p3,
@@ -42,8 +37,8 @@ export {
     p7,
     p8,
     n,
-    na1, na2, na3, na4, na5, na6, na7, na8,
-    ha1, ha2, ha3, ha4, ha5, ha6, ha7, ha8,
-    jj1, jj11, jj3, jj4, jj5, jj6, jj7, jj9,
-    lena1, lena2, lena3, lena4
+    jinjang1, jinjang2, jinjang3, jinjang4, jinjang5, jinjang6, jinjang7, jinjang8, jinjang9, jinjang10, jinjang11, jinjang12, jinjang13,
+    lena1, lena2, lena3, lena4,
+    nature1, nature2, nature3, nature4, nature5, nature6, nature7, nature8, nature9, nature10, nature11, nature12, nature13, nature14, nature15, nature16, nature17, nature18,
+    hap1, hap2, hap3, hap4, hap5, hap6, hap7, hap8, hap9, hap10, hap11
 }
