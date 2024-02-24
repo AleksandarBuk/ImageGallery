@@ -16,24 +16,24 @@ const Navbar = () => {
       setTimeout(() => {
         setHighlightContact(false);
       }, 5000);
-    }, 30000);
+    }, 10000);
   
     return () => clearInterval(interval); 
   }, []); 
 
   const handleNavClick = (nav) => {
-    if (nav.title === "Home") {
+    if (nav.title === "Pocetna") {
       window.location.href = '/';
     }
-    if (nav.title === "About Me") {
+    if (nav.title === "O meni") {
       const section = document.getElementById('about-me');
       if (section) {
         section.scrollIntoView({ behavior: 'smooth', block: 'start' });
       } else {
         window.location.href = '/#aboutme';
       }
-    } else if (nav.title === "Contact") {
-      alert("andjela.dro.photography@gmail.com");
+    } else if (nav.title === "Kontakt") {
+        alert("andjela.dro.photography@gmail.com");
     }
   };
 

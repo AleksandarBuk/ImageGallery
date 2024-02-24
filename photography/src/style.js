@@ -41,7 +41,7 @@ const styles = {
 
 export const ctaButton = {
     padding: '10px 20px',
-    backgroundColor: '#FFD700', // Golden color, adjust based on your design
+    backgroundColor: '#FFD700',
     color: 'white',
     borderRadius: '5px',
     textTransform: 'uppercase',
@@ -49,13 +49,13 @@ export const ctaButton = {
     boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
     transition: 'all 0.3s ease',
     cursor: 'pointer',
-    textDecoration: 'none', // Remove underline from links if applied as a link
-    display: 'inline-block', // To apply padding and margin correctly
-    marginTop: '20px', // Add some space above the CTA button
+    textDecoration: 'none', 
+    display: 'inline-block', 
+    marginTop: '20px', 
 };
 
-// Adjust values as necessary to fit your design
-
+export const modalOverlay = 'fixed inset-0 bg-black bg-opacity-50 z-50';
+export const modalContainer = 'bg-white rounded-lg shadow-lg max-w-sm mx-auto';
 
 export const layout = {
     section: `flex md:flex-row flex-col ${styles.paddingY}`,

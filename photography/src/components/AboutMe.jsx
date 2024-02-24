@@ -10,16 +10,16 @@ const AboutMe = () => (
     <div className={`${styles.boxWidth} text-center md:text-left md:ml-12`}>
       <h2 className={`${styles.heading2} `}>About Me</h2>
       <p className={`${styles.paragraph} my-4`}>
-        Hello! I&apos;m Andjela, a passionate photographer with a deep love for capturing beauty in people and moments. My journey began as a hobby and evolved into a means of storytelling.
+        <p>Zdravo! Ja sam Anđela, fotograf koji duboko voli da beleži lepotu u ljudima i trenucima. Moje putovanje je počelo kao hobi i razvilo se u sredstvo pripovedanja.
       </p>
       <p className={`${styles.paragraph} my-4`}>
-        I specialize in portrait, landscape, and street photography, bringing a unique perspective to each shot. I strive to create images that resonate with emotion and authenticity.
+        Specijalizovala sam se za portretnu, pejzažnu i uličnu fotografiju, donoseći jedinstvenu perspektivu svakom snimku. Težim da stvorim slike koje odjekuju emocijom i autentičnošću.
       </p>
       <p className={`${styles.paragraph} my-4`}>
-        Beyond the lens, I am committed to exploring new techniques and continuously learning. I believe in the magic of stepping out of your comfort zone and experimenting with new styles.
+        Iza objektiva, posvećena sam istraživanju novih tehnika i neprekidnom učenju. Verujem u magiju izlaska iz zone komfora i eksperimentisanja sa novim stilovima.
       </p>
       <p className={`${styles.paragraph} my-4`}>
-        Whether capturing a fleeting smile or the chaotic beauty of urban life, my goal is to bring those scenes to life. Every photo is a piece of my journey, and I'm excited to share it with you.
+        Bilo da zabeležim prolazni osmeh ili haotičnu lepotu urbanog života, moj cilj je da te scene oživim. Svaka fotografija je deo mog putovanja, i uzbuđena sam što ga mogu podeliti sa vama.</p>
       </p>
     </div>
   </div>

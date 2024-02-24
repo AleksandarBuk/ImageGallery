@@ -10,16 +10,16 @@ import { hap1, hap2, hap3, hap4, hap5, hap6, hap7, hap8, hap9, hap10, hap11 } fr
 
 export const navLinks = [
     {
-        title: 'Home',
+        title: 'Početna',
         href: '#home'
     },
     {
-        title: 'About Me',
+        title: 'O meni',
         href: '#aboutme'
     },
     {
-        title: 'Contact',
-        href: '#contact'
+        title: 'Kontakt',
+        href: '#Kontakt'
     }
 ];
 
@@ -28,7 +28,7 @@ export const albums = [
     { 
         id: 1, 
         title: "Portraits", 
-        dateCreated: "2022-01-01", 
+        dateCreated: "2024", 
         imageUrl: lena1, 
         albumUrl: 'album1',
         images: [ 
@@ -67,12 +67,15 @@ export const albums = [
             { id: 14, title: "Image 14", dateCreated: "2022-02-01", imageUrl: c14 },
             { id: 15, title: "Image 15", dateCreated: "2022-02-01", imageUrl: c15 },
             { id: 16, title: "Image 16", dateCreated: "2022-02-01", imageUrl: c16 },
+            { id: 17, title: "Image 17", dateCreated: "2022-02-01", imageUrl: c17 },
+            { id: 17, title: "Image 18", dateCreated: "2022-02-01", imageUrl: c18 },
+            { id: 18, title: "Image 19", dateCreated: "2022-02-01", imageUrl: c19 },
             ]
     },
     { 
         id: 3, 
         title: "Dokumentovana Radost", 
-        dateCreated: "2021", 
+        dateCreated: "2023", 
         imageUrl: hap2, 
         albumUrl: 'album3',
         images: [ 
@@ -92,7 +95,7 @@ export const albums = [
     { 
         id: 4, 
         title: "U dodiru sa prirodom", 
-        dateCreated: "2023-03-01", 
+        dateCreated: "2023", 
         imageUrl: nature2, 
         albumUrl: 'album4',
         images: [ 
@@ -119,7 +122,7 @@ export const albums = [
     { 
         id: 5, 
         title: "U dodiru sa taktom", 
-        dateCreated: "2023-03-01", 
+        dateCreated: "2022", 
         imageUrl: takt3, 
         albumUrl: 'album5',
         images: [ 
@@ -139,7 +142,7 @@ export const albums = [
     { 
         id: 6, 
         title: "Jin-Jang", 
-        dateCreated: "2023-03-01", 
+        dateCreated: "2019", 
         imageUrl: jinjang3, 
         albumUrl: 'album6',
         images: [ 

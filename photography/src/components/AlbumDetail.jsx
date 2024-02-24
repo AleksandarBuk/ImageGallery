@@ -19,7 +19,7 @@ const AlbumDetail = () => {
   }, [album]);
 
   if (!album) {
-    return <div>Album not found</div>;
+    return <div>Album nije pronadjen</div>;
   }
 
   return (
