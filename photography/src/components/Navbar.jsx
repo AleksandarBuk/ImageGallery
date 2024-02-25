@@ -22,20 +22,19 @@ const Navbar = () => {
   }, []); 
 
   const handleNavClick = (nav) => {
-    if (nav.title === "Pocetna") {
+    if (nav.title === "Početna") {
       window.location.href = '/';
-    }
-    if (nav.title === "O meni") {
-      const section = document.getElementById('about-me');
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      } else {
-        window.location.href = '/#aboutme';
-      }
+    } else if (nav.title === "O meni") {
+        const section = document.getElementById('aboutme');
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+            window.location.href = '/#aboutme';
+        }
     } else if (nav.title === "Kontakt") {
         alert("andjela.dro.photography@gmail.com");
     }
-  };
+};
 
   return (
     <nav className={`w-full flex py-6 justify-between items-center ${styles.navbarBg}`}>
