@@ -24,9 +24,9 @@ const styles = {
 
     fadeInScaleUp: "animation-class-names-here",
 
-    navBackground: "px-6 py-4 flex justify-center bg-gradient-to-r from-gray-500 to-gray-700",
-    albumDetailBackground: "from-gray-500 to-gray-700 bg-gradient-to-r ",
-    aboutMeBackground: "from-gray-500 to-gray-600 bg-gradient-to-r ",
+    navBackground: "px-6 py-4 flex justify-center bg-gradient-to-r from-gray-500 to-gray-600",
+    albumDetailBackground: "from-gray-500 to-gray-600 bg-gradient-to-r ",
+    aboutMeBackground: "from-gray-400 to-gray-600 bg-gradient-to-r ",
     mainContentBackground: "flex justify-center items-start bg-gradient-to-r from-gray-500 to-gray-800",
 
     albumDetailContainer: "bg-gradient-to-r from-gray-500 to-gray-800 flex flex-col items-center justify-center",
